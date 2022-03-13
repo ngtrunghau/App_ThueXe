@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GiaoDien.ThongTinKhachHangXemay">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txt_thongtinXM"
+            style="@style/LabelStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <EditText
+        android:id="@+id/edt_SoCMNDXM"
+        style="@style/TextStyle"
+        android:inputType="number"
+        android:hint="Nhập CMND để xóa" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_themXM"
+            style="@style/ButtonStyle"
+            android:onClick="ThemKhachHangXemay"
+            android:text="Thêm" />
+        <Button
+            android:id="@+id/btn_chinhsuaXM"
+            style="@style/ButtonStyle"
+            android:onClick="chinhsuaKhachHangXemay"
+            android:text="Chỉnh sửa" />
+        <Button
+            android:id="@+id/btn_xoaXM"
+            style="@style/ButtonStyle"
+            android:onClick="xoaKhachHangXemay"
+            android:text="Xóa" />
+    </LinearLayout>
+</LinearLayout>

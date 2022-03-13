@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DF531C0"
+
+    android:layout_margin="5dp">
+
+    <TextView
+        android:text="Dịch vụ thuê xe Cần Thơ được thành lập từ năm 2000, với nhiều loại phương tiện di chuyển hiện đại, đa dạng sẵng sàng đáp ứng mọi yêu cầu của quý khách hàng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:textSize="20dp"
+        android:paddingTop="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+    <TextView
+        android:text="Địa chỉ liên hệ:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:textSize="20dp"
+        android:paddingTop="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+    <TextView
+        android:text="Địa chỉ: Số 19A, hẻm 4, đường Mậu Thân phường Xuân Khánh, quận Ninh Kiều, TP. Cần Thơ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+    <TextView
+        android:text="SĐT: 0909 668 669"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:textSize="20dp"
+        android:paddingTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+</LinearLayout>

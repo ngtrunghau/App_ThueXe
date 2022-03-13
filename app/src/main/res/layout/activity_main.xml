@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DF531C0"
+
+    android:layout_margin="5dp">
+
+    <TextView
+        android:text="Dịch vụ thuê xe Cần Thơ kính chào quý khách"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:textSize="20dp"
+        android:paddingTop="40dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+    <TextView
+        android:text="Chúc bạn có trải nghiệm tốt nhất"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:textColor="#DD2C00"/>
+
+    <Button
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:backgroundTint="#d50000"
+        android:layout_marginTop="100dp"
+        android:radius="16dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:onClick="ThucThiActivity"
+        android:text="Bắt đầu thôi nào >>>" />
+
+
+
+
+</LinearLayout>

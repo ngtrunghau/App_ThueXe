@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiaoDien.ThueOTo"
+    android:orientation="vertical">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Thông tin thuê xe Ô tô" />
+    <EditText
+        android:id="@+id/edt_Hoten"
+        style="@style/TextStyle"
+        android:hint="Họ và tên" />
+    <EditText
+        android:id="@+id/edt_NgaySinh"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày sinh" />
+    <EditText
+        android:id="@+id/edt_SoCMND"
+        style="@style/TextStyle"
+        android:inputType="number"
+        android:hint="Số CMND/ CCCD" />
+    <EditText
+    android:id="@+id/edt_diachi"
+    style="@style/TextStyle"
+    android:gravity="top"
+    android:hint="Địa chỉ" />
+
+
+
+    <EditText
+        android:id="@+id/edt_GhiChu"
+        style="@style/TextStyle"
+        android:gravity="top"
+        android:hint="Ghi chú" />
+    <Spinner
+    android:id="@+id/spnCategory"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_startday"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày nhận xe" />
+    <EditText
+        android:id="@+id/edt_endday"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày trả xe" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RadioButton android:id="@+id/radio_pirates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Có thuê tài xế"
+        android:onClick="onRadioButtonClicked"/>
+    <RadioButton android:id="@+id/radio_ninjas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Không thuê tài xế"
+        android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_goitb"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Gởi thông báo"
+            android:onClick="HienThiThongBao"
+            android:src="@mipmap/send" />
+        <ImageButton
+            android:id="@+id/btn_goidulieu"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Gởi dữ liệu"
+            android:onClick="ThemKhachHangOto"
+            android:src="@mipmap/goidulieu" />
+        <ImageButton
+            android:id="@+id/btn_dong"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Đóng"
+            android:onClick="DongActivity"
+            android:src="@mipmap/close" />
+    </LinearLayout>
+
+</LinearLayout>

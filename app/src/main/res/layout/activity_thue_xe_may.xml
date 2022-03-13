@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GiaoDien.ThueXeMay"
+    android:orientation="vertical">
+    <TextView
+        style="@style/TitleStyle"
+        android:text="Thông tin thuê xe máy" />
+    <EditText
+        android:id="@+id/edt_Hoten2"
+        style="@style/TextStyle"
+        android:hint="Họ vè tên" />
+    <EditText
+        android:id="@+id/edt_NgaySinh2"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày sinh" />
+    <EditText
+        android:id="@+id/edt_SoCMND2"
+        style="@style/TextStyle"
+        android:inputType="number"
+        android:hint="Số CMND/ CCCD" />
+    <EditText
+        android:id="@+id/edt_diachi2"
+        style="@style/TextStyle"
+        android:gravity="top"
+        android:hint="Địa chỉ" />
+
+
+
+    <EditText
+        android:id="@+id/edt_GhiChu2"
+        style="@style/TextStyle"
+        android:gravity="top"
+        android:hint="Ghi chú" />
+    <Spinner
+        android:id="@+id/spnCategory2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edt_startday2"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày nhận xe" />
+    <EditText
+        android:id="@+id/edt_endday2"
+        style="@style/TextStyle"
+        android:inputType="datetime"
+        android:hint="Ngày trả xe" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/btn_goitb2"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Gởi thông báo"
+            android:onClick="HienThiThongBao"
+            android:src="@mipmap/send" />
+        <ImageButton
+            android:id="@+id/btn_goidulieu"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Gởi dữ liệu"
+            android:onClick="ThemKhachHangXemay"
+            android:src="@mipmap/goidulieu" />
+        <ImageButton
+            android:id="@+id/btn_dong2"
+            style="@style/ImageButtonStyle"
+            android:contentDescription="Đóng"
+            android:onClick="DongActivity"
+            android:src="@mipmap/close" />
+    </LinearLayout>
+
+</LinearLayout>
